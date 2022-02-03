@@ -1,0 +1,28 @@
+dotnet new sln
+dotnet new webapi -o API
+dotnet sln add API
+dotnet dev-certs https --trust
+dotnet --version
+dotnet new globaljson --sdk-version 3.1.416 --force
+dotnet new globaljson --sdk-version 5.0.404
+dotnet --version
+dotnet run
+
+
+
+angular :
+npm install -g @angular/cli
+ng new client_name
+ng serve
+important extentions for vscode : Angular Language Service
+Angular Snippets
+Bracket pair colorizer
+
+add bootstrap to angular
+npm install ngx-bootstrap --save OR ng add ngx-bootstrap
+npm install font-awesome
+
+
+"./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./dist/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/styles.css"
