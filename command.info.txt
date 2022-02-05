@@ -7,8 +7,14 @@ dotnet new globaljson --sdk-version 3.1.416 --force
 dotnet new globaljson --sdk-version 5.0.404
 dotnet --version
 dotnet run
+dotnet-ef migrations add UserPasswordAdded
+dotnet-ef database update
 
+dotnet-ef database drop
 
+============================================
+Open NuGet Gallery for adding api requirements.
+============================================
 
 angular :
 npm install -g @angular/cli
@@ -26,3 +32,9 @@ npm install font-awesome
 "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./dist/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.css"
+
+
+// Pour le Token JWT et dans la classe Startups.css pour ompléter le processus
+d'authentification 
+on va utiliser l' ExtensionMethods nous permet d'ajouter des méthodes pour des types existants sans créer d'autres types hérités ou modifier d'autres types
+==> créer un nouveau dossier nommé Extentions. 
